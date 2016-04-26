@@ -12,6 +12,8 @@ namespace ResultadosUTB.Web.OnlyLog
 {
     public partial class AdminPage : System.Web.UI.Page
     {
+
+        ConexionBl a = new ConexionBl();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["UserID"] != null)

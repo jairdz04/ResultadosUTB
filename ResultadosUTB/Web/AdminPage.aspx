@@ -28,17 +28,23 @@
             <asp:Button ID="Button3" runat="server" Text="Gestionar Fecha" OnClick="Button3_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button4" runat="server" Text="Gestionar Resultado" OnClick="Button4_Click" />
+
+
+
             <asp:Panel ID="PnlEquipo" runat="server" Height="279px">
                  <asp:Label ID="Label2" runat="server" Text="hola1"></asp:Label>
+
                 </asp:Panel>
             
 
                 <asp:Panel ID="PnlFecha" runat="server" Height="279px">
                     <asp:Label ID="Label3" runat="server" Text="Hola2"></asp:Label>
+
                </asp:Panel>
 
                     <asp:Panel ID="PnlResultado" runat="server" Height="279px">
                         <asp:Label ID="Label4" runat="server" Text="Hola3"></asp:Label>
+
                     </asp:Panel>
                 
 
