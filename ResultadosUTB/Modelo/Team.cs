@@ -52,7 +52,6 @@ namespace ResultadosUTB.Modelo
             set { Tel_contact = value; }
         }
 
-
         #endregion
 
 
@@ -76,8 +75,42 @@ public team (string Nombre, string Cod , string Name_Contact, string E_mail_cont
     
 }
 
-     
         #endregion
+        
+        #region "Métodos SobreEscritos"
+        
+        public override string ToString(){
+            return "Nombre: " + This.Nombre +
+            "\nCodigo : " + This.Cod +
+            "\nNombre de contacto : " + This.Name_Contact +
+            "\nE Mail de contacto : " + This.E_mail_Contact +
+            "\nTelefono de contacto : " + This.Tec_contact ;
+            
+            
+        }
+        
+        public override int GetHashCode()
+        {
+            return this.ToString().GetHashCode();
+        }
+        
+        public override bool Equals (object obj){
+           Team o = (Team)obj;
+            bool result = false;
+            
+            if ((this.Name == o.Nombre)&& 
+            (this.Cod == o.Cod) &&
+            (this.Name_Contact == o.Name_Contact) &&
+            (this.E_mail_Contact == o.E_mail_Contact) &&
+            (this.Tec_contact == o.Tec_contact))
+            
+            result= true;
+            
+            return result;
+            
+        }
+  
+        #endregion 
 
     }
 }
