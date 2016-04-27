@@ -57,6 +57,14 @@ namespace ResultadosUTB.Modelo
 
 
         #region "constructores"
+        
+        public Team () {
+            This.Nombre = "Jair";
+            This.Cod = "123";
+             This.Name_Contact = "Jose Joaquin";
+        This.E_mail_Contact = "Jairdz040";
+       This.Tel_contact = "000000";
+        }
 
       /*  public Persona() {
             this.id = "";
