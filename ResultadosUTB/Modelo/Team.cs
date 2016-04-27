@@ -66,30 +66,17 @@ namespace ResultadosUTB.Modelo
        This.Tel_contact = "000000";
         }
 
-      /*  public Persona() {
-            this.id = "";
-            this.TipoID = "";
-            this.identificacion = "";
-            this.Nombres = "";
-            this.Apellidos = "";
-            this.sede = "";
-            this.Sexo = "";
-            this.F_Nacimiento = "";
-        }
+public team (string Nombre, string Cod , string Name_Contact, string E_mail_contact, string Tel_contact){
+    
+     This.Nombre = Nombre;
+            This.Cod = Cod ;
+             This.Name_Contact = Name_Contact;
+        This.E_mail_Contact = E_mail_Contact ;
+       This.Tel_contact = Tel_contact;
+    
+}
 
-        public Persona(string id, string TipoID, string identificacion, string Nombres, string Apellidos,string sede, string Sexo, string F_Nacimiento) {
-
-            this.id = id;
-            this.TipoID = TipoID;
-            this.identificacion = identificacion;
-            this.Nombres = Nombres;
-            this.Apellidos = Apellidos;
-            this.sede = sede;
-            this.Sexo = Sexo;
-            this.F_Nacimiento = F_Nacimiento;
-        
-        }
-        */
+     
         #endregion
 
     }
