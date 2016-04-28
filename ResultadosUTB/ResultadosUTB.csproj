@@ -65,6 +65,7 @@
     <Content Include="Web\Verification.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\CrudJugadores.cs" />
     <Compile Include="Modelo\ConexionBl.cs" />
     <Compile Include="Modelo\Jugador.cs" />
     <Compile Include="Modelo\Team.cs" />
