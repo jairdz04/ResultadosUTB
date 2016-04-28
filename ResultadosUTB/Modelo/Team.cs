@@ -58,30 +58,59 @@ namespace ResultadosUTB.Modelo
 
         #region "constructores"
 
-      /*  public Persona() {
-            this.id = "";
-            this.TipoID = "";
-            this.identificacion = "";
-            this.Nombres = "";
-            this.Apellidos = "";
-            this.sede = "";
-            this.Sexo = "";
-            this.F_Nacimiento = "";
+      public Team () {
+            this.Nombre = "Jair";
+            this.Cod = "123";
+             this.Name_Contact = "Jose Joaquin";
+        this.E_mail_Contact = "Jairdz040";
+       this.Tel_contact = "000000";
         }
 
-        public Persona(string id, string TipoID, string identificacion, string Nombres, string Apellidos,string sede, string Sexo, string F_Nacimiento) {
+public Team (string Nombre, string Cod , string Name_Contact, string E_mail_Contact, string Tel_contact){
+    
+     this.Nombre = Nombre;
+            this.Cod = Cod ;
+             this.Name_Contact = Name_Contact;
+        this.E_mail_Contact = E_mail_Contact ;
+       this.Tel_contact = Tel_contact;
+    
+}
 
-            this.id = id;
-            this.TipoID = TipoID;
-            this.identificacion = identificacion;
-            this.Nombres = Nombres;
-            this.Apellidos = Apellidos;
-            this.sede = sede;
-            this.Sexo = Sexo;
-            this.F_Nacimiento = F_Nacimiento;
+        #endregion
         
+        #region "Métodos SobreEscritos"
+        
+        public override string ToString(){
+            return "Nombre: " + this.Nombre +
+            "\nCodigo : " + this.Cod +
+            "\nNombre de contacto : " + this.Name_Contact +
+            "\nE Mail de contacto : " + this.E_mail_Contact +
+            "\nTelefono de contacto : " + this.Tel_contact ;
+            
+            
         }
-        */
+        
+        public override int GetHashCode()
+        {
+            return this.ToString().GetHashCode();
+        }
+        
+        public override bool Equals (object obj){
+           Team o = (Team)obj;
+            bool result = false;
+            
+            if ((this.Nombre == o.Nombre)&& 
+            (this.Cod == o.Cod) &&
+            (this.Name_Contact == o.Name_Contact) &&
+            (this.E_mail_Contact == o.E_mail_Contact) &&
+            (this.Tel_contact == o.Tel_contact))
+            
+            result= true;
+            
+            return result;
+            
+        }
+  
         #endregion
 
     }
