@@ -10,9 +10,9 @@ namespace ResultadosUTB.Modelo
   #region "atributos"
 
         public string NombreJ;
-        public string cod_Jug; //T000
+        public string cod_Jug; 
         public string cod_equi;
-        public string programa;
+        public string programa; // revisar funcionamiento
 
   #endregion 
 

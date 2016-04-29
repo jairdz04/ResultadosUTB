@@ -23,8 +23,8 @@ namespace ResultadosUTB.Web.OnlyLog
             else
             {
                 //Label1.Text = "Fail";
-               // Response.Write("<script>alert('Usted no ha iniciado sesión');</script>");
-                Response.Redirect("Default.aspx");
+               //Response.Write("<script>alert('Usted no ha iniciado sesión');</script>");
+               Response.Redirect("Default.aspx");
             }
 
             PnlEquipo.Visible = true;
