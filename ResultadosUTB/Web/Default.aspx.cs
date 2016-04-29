@@ -27,6 +27,7 @@ namespace ResultadosUTB.Web
             a.getA.Open();
 
             
+            
             SqlDataAdapter sda = new SqlDataAdapter("Select count(*) From Usuarios Where ds_login = '" + TextBox1.Text + "'and ds_Password='" + TextBox2.Text + "'", a.getA);
             DataTable dt = new DataTable();
             sda.Fill(dt);
