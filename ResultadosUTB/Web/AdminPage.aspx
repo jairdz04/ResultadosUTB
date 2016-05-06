@@ -72,53 +72,43 @@
 
             <asp:Panel ID="PnlEquipo" runat="server" Height="279px">
            
-                 &nbsp;<br /> &nbsp;<asp:Label ID="Label31" runat="server" Text="Ingrese código de equipo"></asp:Label>
-&nbsp;&nbsp;<asp:TextBox ID="TextBox27" runat="server"></asp:TextBox>
-&nbsp;
-            <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" />
-            <br />
-            <br />
-                          <div id="equipo"> 
-                  <br />
-                 <br />
-                                 &nbsp;
-                              <asp:Label ID="Label2" runat="server" Text="Nombre del equipo"></asp:Label>
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                               <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                              <br />
-                              <br />
-&nbsp;
-                              <asp:Label ID="Label5" runat="server" Text="Nombre del delegado"></asp:Label>
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                               <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                              <br />
-                              <br />
-                              &nbsp;
-                              <asp:Label ID="Label6" runat="server" Text="E- Mail del delegado"></asp:Label>
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                              <br />
-                 <br />
-                               &nbsp;
-                               <asp:Label ID="Label7" runat="server" Text="Telefono del delegado"></asp:Label>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                               <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-                 <br />
-                              <br />
-                              &nbsp;
-                              <asp:Label ID="Label25" runat="server" Text="código del equipo"></asp:Label>
-                              &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                               <asp:TextBox ID="TextBox21" runat="server"></asp:TextBox>
-                             
-                           </div>
-
-
-                <div id ="jugadores">
-
+                 &nbsp;<br /> &nbsp;&nbsp;
+                 <asp:Label ID="Label31" runat="server" Text="Ingrese código de equipo"></asp:Label>
+                 &nbsp;&nbsp;<asp:TextBox ID="TextBox27" runat="server"></asp:TextBox>
+                 &nbsp; &nbsp;<asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Buscar" />
+                          <br />
+                          <br />
+                 <div id="equipo">
+                     <br />
+                     <br />
+                     &nbsp;
+                     <asp:Label ID="Label2" runat="server" Text="Nombre del equipo"></asp:Label>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                     <br />
+                     <br />
+                     &nbsp;
+                     <asp:Label ID="Label5" runat="server" Text="código del equipo"></asp:Label>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                     <br />
+                     <br />
+                     &nbsp;
+                     <asp:Label ID="Label6" runat="server" Text="E- Mail del delegado"></asp:Label>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                     <br />
+                     <br />
+                     &nbsp;
+                     <asp:Label ID="Label7" runat="server" Text="Telefono del delegado"></asp:Label>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                     <br />
+                     <br />
+                     &nbsp;
+                 </div>
+                 <div id="jugadores">
                      <asp:Label ID="Label8" runat="server" Text="Escriba los nombres de sus jugadores"></asp:Label>
-
-
-
                      <br />
                      <br />
                      &nbsp;
@@ -148,7 +138,7 @@
                      <asp:Label ID="Label14" runat="server" Text="12"></asp:Label>
                      <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
                      &nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label27" runat="server" Text="17"></asp:Label>
-&nbsp;&nbsp;<asp:TextBox ID="TextBox23" runat="server"></asp:TextBox>
+                     &nbsp;&nbsp;<asp:TextBox ID="TextBox23" runat="server"></asp:TextBox>
                      <br />
                      <br />
                      &nbsp;
@@ -166,8 +156,8 @@
                      &nbsp;&nbsp;<asp:TextBox ID="TextBox24" runat="server"></asp:TextBox>
                      <br />
                      <br />
-&nbsp;&nbsp;<asp:Label ID="Label18" runat="server" Text="4"></asp:Label>
-&nbsp;&nbsp;<asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
+                     &nbsp;&nbsp;<asp:Label ID="Label18" runat="server" Text="4"></asp:Label>
+                     &nbsp;&nbsp;<asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
                      &nbsp;&nbsp;&nbsp;
                      <asp:Label ID="Label19" runat="server" Text="9"></asp:Label>
                      &nbsp;<asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
@@ -180,7 +170,7 @@
                      <asp:TextBox ID="TextBox25" runat="server"></asp:TextBox>
                      <br />
                      <br />
-                    &nbsp;
+                     &nbsp;
                      <asp:Label ID="Label21" runat="server" Text="5"></asp:Label>
                      &nbsp;
                      <asp:TextBox ID="TextBox17" runat="server"></asp:TextBox>
@@ -195,18 +185,12 @@
                      <asp:TextBox ID="TextBox26" runat="server"></asp:TextBox>
                      <br />
                      <br />
-                    
-                    
-
-
-
-                </div>
-
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <br />
+                 </div>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <br />
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                <asp:Button ID="BtnAgregar" runat="server" Text="Agregar" />
+                <asp:Button ID="BtnAgregar" runat="server" Text="Agregar" OnClick="BtnAgregar_Click" />
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="BtnEditar" runat="server" Text="Editar" />    
             </asp:Panel>
@@ -326,7 +310,126 @@
                     <asp:Panel ID="PnlResultado" runat="server" Height="279px">
                         <asp:Label ID="Label4" runat="server" Text="Gestión de resultados"></asp:Label>
                         
-                       
+                         <br />
+                        <br />
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="Label62" runat="server" Text="# de fecha"></asp:Label>
+&nbsp;
+                        <asp:DropDownList ID="DropDownList2" runat="server">
+                            <asp:ListItem>1</asp:ListItem>
+                            <asp:ListItem>2</asp:ListItem>
+                            <asp:ListItem>3</asp:ListItem>
+                            <asp:ListItem>4</asp:ListItem>
+                            <asp:ListItem>5</asp:ListItem>
+                            <asp:ListItem>6</asp:ListItem>
+                            <asp:ListItem>7</asp:ListItem>
+                            <asp:ListItem>8</asp:ListItem>
+                            <asp:ListItem>Cuartos1</asp:ListItem>
+                            <asp:ListItem>cuartos2</asp:ListItem>
+                            <asp:ListItem>cuartos3</asp:ListItem>
+                            <asp:ListItem>cuartos4</asp:ListItem>
+                            <asp:ListItem>Semifinal1</asp:ListItem>
+                            <asp:ListItem>semifinal2</asp:ListItem>
+                            <asp:ListItem>Final</asp:ListItem>
+                        </asp:DropDownList>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+                        <br />
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="Label46" runat="server" Text="1."></asp:Label>
+                        &nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox43" runat="server"></asp:TextBox>
+&nbsp;
+                    <asp:Label ID="Label47" runat="server" Text="VS"></asp:Label>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox44" runat="server"></asp:TextBox>
+
+                        <br />
+
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label48" runat="server" Text="2."></asp:Label>
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox45" runat="server"></asp:TextBox>
+                    &nbsp;
+                    <asp:Label ID="Label49" runat="server" Text="VS"></asp:Label>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox46" runat="server"></asp:TextBox>
+
+                        <br />
+
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <asp:Label ID="Label50" runat="server" Text="3."></asp:Label>
+
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox47" runat="server"></asp:TextBox>
+&nbsp;
+                    <asp:Label ID="Label51" runat="server" Text="VS"></asp:Label>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox48" runat="server"></asp:TextBox>
+
+                        <br />
+
+                    <br />
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label52" runat="server" Text="4."></asp:Label>
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox49" runat="server"></asp:TextBox>
+
+                    &nbsp;&nbsp;<asp:Label ID="Label53" runat="server" Text="VS"></asp:Label>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox50" runat="server"></asp:TextBox>
+                        <br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label54" runat="server" Text="5."></asp:Label>
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox51" runat="server"></asp:TextBox>
+                    &nbsp;
+                    <asp:Label ID="Label55" runat="server" Text="VS"></asp:Label>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox52" runat="server"></asp:TextBox>
+
+                        <br />
+
+                    &nbsp;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label56" runat="server" Text="6."></asp:Label>
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox53" runat="server"></asp:TextBox>
+&nbsp;
+                    <asp:Label ID="Label57" runat="server" Text="VS"></asp:Label>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox54" runat="server"></asp:TextBox>
+
+                        <br />
+
+                    &nbsp;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label58" runat="server" Text="7."></asp:Label>
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox55" runat="server"></asp:TextBox>
+&nbsp;
+                    <asp:Label ID="Label59" runat="server" Text="VS"></asp:Label>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox56" runat="server"></asp:TextBox>
+
+                        <br />
+
+                    <br />
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label60" runat="server" Text="8."></asp:Label>
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox57" runat="server"></asp:TextBox>
+&nbsp;
+                    <asp:Label ID="Label61" runat="server" Text="VS"></asp:Label>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox58" runat="server"></asp:TextBox>
 
                     </asp:Panel>
                 

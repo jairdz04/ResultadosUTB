@@ -32,7 +32,7 @@ namespace ResultadosUTB.Datos
         }
 
         public void CrearJugador(Jugador j) {
-            String insert = "insert into Jugador (NombreJ, CodigoJ, CodigoE,  Programa) values ('" + j.NombreJ + "','" + j.cod_Jug + "','" + j.cod_equi + "', '" + j.programa + "')";
+            String insert = "insert into Jugador (NombreJ, CodigoJ, CodigoE) values ('" + j.NombreJ + "','" + j.cod_Jug + "','" + j.cod_equi +"')";
             ejecutar(insert);
         
         }
@@ -44,11 +44,11 @@ namespace ResultadosUTB.Datos
 
         }
 
-        public void ActualizarJugador(Jugador g)
+        /*public void ActualizarJugador(Jugador g)
         {
             String Actualizar = "update Jugador  set  NombreJ='" + g.NombreJ + "',CodigoJ = '" + g.cod_Jug + "', CodigoE = '" + g.cod_equi + "' , Programa = '" + g.programa +  "' where id_Cliente = '" + g.cod_Jug + "'";
             ejecutar(Actualizar);
-        }
+        }*/
 
 
         public Jugador BuscarJugador(string Id)
@@ -66,7 +66,7 @@ namespace ResultadosUTB.Datos
                 j.NombreJ = c.sl[0].ToString();
                 j.cod_Jug = c.sl[1].ToString();
                 j.cod_equi = c.sl[2].ToString();
-                j.programa = c.sl[3].ToString();
+         
             }
             c.a.Close();
 

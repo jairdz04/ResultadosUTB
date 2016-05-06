@@ -14,7 +14,7 @@ namespace ResultadosUTB.Modelo
         public SqlDataReader sl;
 
         public ConexionBl(){
-            a = new SqlConnection("Server=JAIRDIAZ\\SQLEXPRESS; Database= UtbDesarrollo; Integrated Security=true");
+            a = new SqlConnection("Server=JAIRDIAZ\\SQLEXPRESS; Database=ResultadosUTB; Integrated Security=true");
          }
 
         public SqlConnection getA
