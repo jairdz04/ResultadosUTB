@@ -32,23 +32,23 @@ namespace ResultadosUTB.Datos
         }
 
         public void CrearJugador(Jugador j) {
-            String insert = "insert into Jugador (NombreJ, CodigoJ, CodigoE) values ('" + j.NombreJ + "','" + j.cod_Jug + "','" + j.cod_equi +"')";
+            String insert = "insert into Jugadores (nombre_jugador, Codigo_jugador, codigo_equipo) values ('" + j.NombreJ + "','" + j.cod_Jug + "','" + j.cod_equi +"')";
             ejecutar(insert);
         
         }
 
-        public void EliminarJugador(string codigo)
+        /*public void EliminarJugador(string codigo)
         {
             String Borrar = "delete from Jugador where CodigoJ = '" + codigo + "'";
             ejecutar(Borrar);
 
         }
 
-        /*public void ActualizarJugador(Jugador g)
+        public void ActualizarJugador(Jugador g)
         {
             String Actualizar = "update Jugador  set  NombreJ='" + g.NombreJ + "',CodigoJ = '" + g.cod_Jug + "', CodigoE = '" + g.cod_equi + "' , Programa = '" + g.programa +  "' where id_Cliente = '" + g.cod_Jug + "'";
             ejecutar(Actualizar);
-        }*/
+        }
 
 
         public Jugador BuscarJugador(string Id)
@@ -72,7 +72,7 @@ namespace ResultadosUTB.Datos
 
             return j;
 
-        }
+        }*/
 
     }
 }
