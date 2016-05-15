@@ -57,9 +57,19 @@ namespace ResultadosUTB.Datos
             c.a.Close();
 
             return t;
-        
-        
+
+
+         }
+
+
+        public void ActualizarEquipo(Team t)
+        {
+            String Actualizar = "update Equipos  set  nombre_equipo='" + t.Nombre + "',codigo_equipo = '" + t.Cod + "', tel_equipo = '" + t.Tel_contact + "' , email_equipo = '" + t.E_mail_Contact + "' where codigo_equipo= '" + t.Cod + "'";
+            ejecutar(Actualizar);
         }
+
+
+
 
 
 

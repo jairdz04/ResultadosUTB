@@ -589,6 +589,15 @@ namespace ResultadosUTB.Web.OnlyLog {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
+        /// Control Label63.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label63;
+        
+        /// <summary>
         /// Control Label3.
         /// </summary>
         /// <remarks>
@@ -623,6 +632,15 @@ namespace ResultadosUTB.Web.OnlyLog {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox29;
+        
+        /// <summary>
+        /// Control TextBox59.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox59;
         
         /// <summary>
         /// Control Label32.
@@ -661,6 +679,24 @@ namespace ResultadosUTB.Web.OnlyLog {
         protected global::System.Web.UI.WebControls.TextBox TextBox30;
         
         /// <summary>
+        /// Control TextBox60.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox60;
+        
+        /// <summary>
+        /// Control BtnGuardarFecha.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnGuardarFecha;
+        
+        /// <summary>
         /// Control Label34.
         /// </summary>
         /// <remarks>
@@ -695,6 +731,15 @@ namespace ResultadosUTB.Web.OnlyLog {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox32;
+        
+        /// <summary>
+        /// Control TextBox61.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox61;
         
         /// <summary>
         /// Control Label36.
@@ -733,6 +778,24 @@ namespace ResultadosUTB.Web.OnlyLog {
         protected global::System.Web.UI.WebControls.TextBox TextBox34;
         
         /// <summary>
+        /// Control TextBox62.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox62;
+        
+        /// <summary>
+        /// Control BtnEditarFecha.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnEditarFecha;
+        
+        /// <summary>
         /// Control Label38.
         /// </summary>
         /// <remarks>
@@ -767,6 +830,15 @@ namespace ResultadosUTB.Web.OnlyLog {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox36;
+        
+        /// <summary>
+        /// Control TextBox63.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox63;
         
         /// <summary>
         /// Control Label40.
@@ -805,6 +877,15 @@ namespace ResultadosUTB.Web.OnlyLog {
         protected global::System.Web.UI.WebControls.TextBox TextBox38;
         
         /// <summary>
+        /// Control TextBox64.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox64;
+        
+        /// <summary>
         /// Control Label42.
         /// </summary>
         /// <remarks>
@@ -841,6 +922,15 @@ namespace ResultadosUTB.Web.OnlyLog {
         protected global::System.Web.UI.WebControls.TextBox TextBox40;
         
         /// <summary>
+        /// Control TextBox65.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox65;
+        
+        /// <summary>
         /// Control Label44.
         /// </summary>
         /// <remarks>
@@ -875,6 +965,15 @@ namespace ResultadosUTB.Web.OnlyLog {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox42;
+        
+        /// <summary>
+        /// Control TextBox66.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox66;
         
         /// <summary>
         /// Control PnlResultado.

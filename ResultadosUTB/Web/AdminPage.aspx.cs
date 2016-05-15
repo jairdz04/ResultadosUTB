@@ -17,6 +17,7 @@ namespace ResultadosUTB.Web.OnlyLog
         ConexionBl a = new ConexionBl();
         CrudGeneral g = new CrudGeneral();
         CrudJugadores h = new CrudJugadores();
+        CrudCalendario b = new CrudCalendario();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["UserID"] != null)
@@ -251,6 +252,30 @@ namespace ResultadosUTB.Web.OnlyLog
 
             }
         
+        }
+
+        protected void BtnEditar_Click(object sender, EventArgs e)
+        {
+            try { 
+            Team t = new Team();
+
+            t.Cod = TextBox2.Text;
+            t.Nombre = TextBox1.Text;
+            t.E_mail_Contact = TextBox3.Text;
+            t.Tel_contact = TextBox4.Text;
+            g.ActualizarEquipo(t);
+            Response.Write("<script>alert('Actualizado correctamente');</script>");
+                }catch(Exception ex){
+                    Response.Write("<script>alert('Fallo al actualizar');</script>");
+                
+                }
+
+        }
+
+        protected void BtnGuardarFecha_Click(object sender, EventArgs e)
+        {
+
+
         }
         
 
