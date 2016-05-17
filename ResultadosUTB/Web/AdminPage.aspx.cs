@@ -75,6 +75,14 @@ namespace ResultadosUTB.Web.OnlyLog
                 if ((TextBox1.Text == "") || (TextBox2.Text == "") || (TextBox3.Text == "") || (TextBox4.Text == ""))
                 {
                     Response.Write("<script> alert ('Campos Vacios, favor completar'); </script>");
+                    
+            /* string codigo = TextBox2.Text;
+            Team t = g.BuscarEquipo(codigo);
+
+            if (g != null)
+            {
+                response.Write ("<script> alert ('El còdigo de equipo ya existe');</script>"); // agregar || a if inicial.
+            }*/
                 }
                 else { 
                 Team t = new Team();
@@ -83,6 +91,7 @@ namespace ResultadosUTB.Web.OnlyLog
                 t.Tel_contact = TextBox4.Text;
                 t.E_mail_Contact = TextBox3.Text;
                 g.CrearEquipo(t);
+        
                 GuardarJugadores();
                 Response.Write("<script>alert('Equipo creado con exito');</script>");
                 TextBox1.Text = "";
@@ -111,7 +120,7 @@ namespace ResultadosUTB.Web.OnlyLog
             }
             else
             {
-                Response.Write("<script>alert('Eso está malo');</script>");
+                Response.Write("<script>alert('El còdigo no existe');</script>");
 
             }
 
