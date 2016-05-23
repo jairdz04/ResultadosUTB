@@ -17,6 +17,7 @@ namespace ResultadosUTB.Web
         protected void Page_Load(object sender, EventArgs e)
         {
             //Label3.Visible = false;
+            //response.write("<script> alert('Error');</script>");
            
 
         }
