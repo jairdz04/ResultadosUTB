@@ -36,8 +36,7 @@ namespace ResultadosUTB.Datos
 
         }*/
 
-        public Team
-         BuscarEquipo(string id) {
+        public Team BuscarEquipo(string id) {
             Team t = new Team();
 
             String select = "select * from Equipos where codigo_equipo = '" + id + "'";

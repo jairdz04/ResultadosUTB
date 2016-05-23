@@ -111,7 +111,7 @@ namespace ResultadosUTB.Web.OnlyLog
             }
             else
             {
-                Response.Write("<script>alert('Eso está malo');</script>");
+                Response.Write("<script>alert('No existe registro');</script>");
 
             }
 
@@ -274,18 +274,99 @@ namespace ResultadosUTB.Web.OnlyLog
 
         protected void BtnGuardarFecha_Click(object sender, EventArgs e)
         {
+            try {
+                Calendario f = new Calendario();
+                f.CodPartido = Label3.Text;
+                f.CodEquipo1 = TextBox28.Text;
+                f.CodEquipo2 = TextBox29.Text;
+                f.CodFecha = DropDownList1.Text;
+                f.Hora = TextBox59.Text;
+                b.CrearProgramación(f);
+
+                Calendario f1 = new Calendario();
+                f1.CodPartido = Label32.Text;
+                f1.CodEquipo1 = TextBox22.Text;
+                f1.CodEquipo2 = TextBox30.Text;
+                f1.CodFecha = DropDownList1.Text;
+                f1.Hora = TextBox60.Text;
+                b.CrearProgramación(f1);
+
+                Calendario f2 = new Calendario();
+                f2.CodPartido = Label34.Text;
+                f2.CodEquipo1 = TextBox31.Text;
+                f2.CodEquipo2 = TextBox32.Text;
+                f2.CodFecha = DropDownList1.Text;
+                f2.Hora = TextBox61.Text;
+                b.CrearProgramación(f2);
+
+                Calendario f3 = new Calendario();
+                f3.CodPartido = Label36.Text;
+                f3.CodEquipo1 = TextBox33.Text;
+                f3.CodEquipo2 = TextBox34.Text;
+                f3.CodFecha = DropDownList1.Text;
+                f3.Hora = TextBox62.Text;
+                b.CrearProgramación(f3);
+
+                Calendario f4 = new Calendario();
+                f4.CodPartido = Label38.Text;
+                f4.CodEquipo1 = TextBox35.Text;
+                f4.CodEquipo2 = TextBox36.Text;
+                f4.CodFecha = DropDownList1.Text;
+                f4.Hora = TextBox63.Text;
+                b.CrearProgramación(f4);
+
+                Calendario f5 = new Calendario();
+                f5.CodPartido = Label40.Text;
+                f5.CodEquipo1 = TextBox37.Text;
+                f5.CodEquipo2 = TextBox38.Text;
+                f5.CodFecha = DropDownList1.Text;
+                f5.Hora = TextBox64.Text;
+                b.CrearProgramación(f5);
+
+                Calendario f6 = new Calendario();
+                f6.CodPartido = Label42.Text;
+                f6.CodEquipo1 = TextBox39.Text;
+                f6.CodEquipo2 = TextBox40.Text;
+                f6.CodFecha = DropDownList1.Text;
+                f6.Hora = TextBox65.Text;
+                b.CrearProgramación(f6);
+
+                Calendario f7 = new Calendario();
+                f7.CodPartido = Label44.Text;
+                f7.CodEquipo1 = TextBox41.Text;
+                f7.CodEquipo2 = TextBox42.Text;
+                f7.CodFecha = DropDownList1.Text;
+                f7.Hora = TextBox66.Text;
+                b.CrearProgramación(f7);
+
+            }catch(Exception ex){
+            
+            
+            
+            }
+
+        }
+
+        protected void BtnBuscarFecha_Click(object sender, EventArgs e)
+        {
+            string codigoFecha1 = DropDownList1.Text;
+            string CodigoPartido1 = Label3.Text; 
+            Calendario t = b.BuscarFecha(codigoFecha1, CodigoPartido1);
+
+            if (b != null)
+            {
+                
+            }
+            else
+            {
+                Response.Write("<script>alert('No existe registro');</script>");
+
+            }
+
+        }
+
+
 
 
         }
-        
-
-        
-
-        
-
-       
-
-
-
-    }
-}
+       }

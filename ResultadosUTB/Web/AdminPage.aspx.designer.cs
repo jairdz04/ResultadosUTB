@@ -886,6 +886,15 @@ namespace ResultadosUTB.Web.OnlyLog {
         protected global::System.Web.UI.WebControls.TextBox TextBox64;
         
         /// <summary>
+        /// Control BtnBuscarFecha.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnBuscarFecha;
+        
+        /// <summary>
         /// Control Label42.
         /// </summary>
         /// <remarks>
