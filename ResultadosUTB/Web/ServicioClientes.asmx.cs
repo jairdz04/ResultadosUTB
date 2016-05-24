@@ -39,5 +39,47 @@ namespace ResultadosUTB.Web
             return lista.ToArray();
 
         }
+
+        [WebMethod]
+        public Jugador[] ListadoJugadores() {
+
+            SqlConnection con = new SqlConnection("server=JAIRDIAZ\\SQLEXPRESS; Database=ResultadosUTB; Integrated Security=true");
+            con.Open();
+            string sql = "SELECT Codigo_jugador, nombre_jugador , codigo_equipo FROM Jugadores";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            List<Jugador> lista = new List<Jugador>();
+            while (reader.Read())
+            {
+                lista.Add(new Jugador(reader.GetString(1), reader.GetString(0), reader.GetString(2)));
+            }
+            con.Close();
+
+            return lista.ToArray();
+        
+        }
+
+        [WebMethod]
+        public Calendario[] ListadoCalendario() {
+
+            SqlConnection con = new SqlConnection("server=JAIRDIAZ\\SQLEXPRESS; Database=ResultadosUTB; Integrated Security=true");
+            con.Open();
+            string sql = "SELECT numero_partido, codigo_equipo1, codigo_equipo2, codigo_fecha, fecha_encuentro FROM calendario";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            List<Calendario> lista = new List<Calendario>();
+            while (reader.Read())
+            {
+                lista.Add(new Calendario(Convert.ToString(reader.GetInt32(0)), reader.GetString(1), reader.GetString(2), reader.GetString(3), Convert.ToString(reader.GetDateTime(4))));
+            }
+            con.Close();
+
+            return lista.ToArray();
+        
+        
+        
+        }
+
+
     }
 }

@@ -19,7 +19,8 @@ namespace ResultadosUTB.Modelo
 
         #region "propriedades"
 
-        public string codPartido {
+        public string codPartido
+        {
             get { return CodPartido; }
             set { CodPartido = value; }
         
@@ -62,7 +63,8 @@ namespace ResultadosUTB.Modelo
         
         }
 
-        public Calendario(string CodPartido, string CodEquipo1, string CodEquipo2, string CodFecha, string Hora) {
+        public Calendario(string CodPartido, string CodEquipo1, string CodEquipo2, string CodFecha, string Hora)
+        {
             this.CodPartido = CodPartido;
             this.CodEquipo1 = CodEquipo1;
             this.CodEquipo2 = CodEquipo2;

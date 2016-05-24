@@ -279,7 +279,7 @@ namespace ResultadosUTB.Web.OnlyLog
                 f.CodPartido = "1";//Label3.Text;
                 f.CodEquipo1 = TextBox28.Text;
                 f.CodEquipo2 = TextBox29.Text;
-                f.CodFecha = DropDownList1.Text;
+                f.CodFecha = DropDownList1.Text.ToString();
                 f.Hora = TextBox59.Text;
                 b.CrearProgramación(f);
 
@@ -355,6 +355,11 @@ namespace ResultadosUTB.Web.OnlyLog
 
             if (b != null)
             {
+                
+
+                TextBox28.Text = t.CodEquipo1;
+                TextBox29.Text = t.CodEquipo2;
+                TextBox59.Text = t.Hora;
                 
             }
             else
