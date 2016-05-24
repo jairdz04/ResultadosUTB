@@ -60,6 +60,7 @@
     <Content Include="Web.config" />
     <Content Include="Web\Default.aspx" />
     <Content Include="Web\AdminPage.aspx" />
+    <Content Include="Web\ServicioClientes.asmx" />
     <Content Include="Web\SignUp.aspx" />
     <Content Include="Web\StyleDefault.css" />
     <Content Include="Web\Verification.aspx" />
@@ -86,6 +87,10 @@
     </Compile>
     <Compile Include="Web\AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ServicioClientes.asmx.cs">
+      <DependentUpon>ServicioClientes.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Web\SignUp.aspx.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>

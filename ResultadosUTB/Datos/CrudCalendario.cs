@@ -47,11 +47,11 @@ namespace ResultadosUTB.Datos
             if (c.sl.Read())
             {
                 t = new Calendario();
-                t.CodPartido = c.sl[0].ToString();
-                t.CodEquipo1 = c.sl[1].ToString();
-                t.CodEquipo2 = c.sl[2].ToString();
-                t.codFecha = c.sl[3].ToString();
-                t.Hora = c.sl[4].ToString();
+                t.CodPartido = c.sl[1].ToString();
+                t.CodEquipo1 = c.sl[2].ToString();
+                t.CodEquipo2 = c.sl[3].ToString();
+                t.codFecha = c.sl[4].ToString();
+                t.Hora = c.sl[5].ToString();
             }
             c.a.Close();
 

@@ -276,14 +276,14 @@ namespace ResultadosUTB.Web.OnlyLog
         {
             try {
                 Calendario f = new Calendario();
-                f.CodPartido = Label3.Text;
+                f.CodPartido = "1";//Label3.Text;
                 f.CodEquipo1 = TextBox28.Text;
                 f.CodEquipo2 = TextBox29.Text;
                 f.CodFecha = DropDownList1.Text;
                 f.Hora = TextBox59.Text;
                 b.CrearProgramación(f);
 
-                Calendario f1 = new Calendario();
+           /*     Calendario f1 = new Calendario();
                 f1.CodPartido = Label32.Text;
                 f1.CodEquipo1 = TextBox22.Text;
                 f1.CodEquipo2 = TextBox30.Text;
@@ -338,7 +338,7 @@ namespace ResultadosUTB.Web.OnlyLog
                 f7.CodFecha = DropDownList1.Text;
                 f7.Hora = TextBox66.Text;
                 b.CrearProgramación(f7);
-
+                */
             }catch(Exception ex){
             
            
