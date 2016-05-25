@@ -36,10 +36,10 @@ namespace ResultadosUTB.Datos
 
 
 
-        public Calendario BuscarFecha(string codigoFecha, string CodigoPartido) {
+        public Calendario BuscarFecha( string CodigoPartido) {
             Calendario t = new Calendario();
 
-            String select = "select * from calendario where codigo_fecha = '" + codigoFecha + "' and numero_partido = '" + CodigoPartido +"'";
+            String select = "select * from calendario where  numero_partido = '" + CodigoPartido +"'";
             c.a.Open();
             c.sen = new SqlCommand(select, c.a);
             c.sl = c.sen.ExecuteReader();
@@ -59,6 +59,32 @@ namespace ResultadosUTB.Datos
 
 
          }
+
+        public Calendario BuscarCod(string cod) {
+            Calendario t = new Calendario();
+            String select = "select numero_partido from calendario where  numero_partido = '" + cod + "'";
+            c.a.Open();
+            c.sen = new SqlCommand(select, c.a);
+            c.sl = c.sen.ExecuteReader();
+
+            if (c.sl.Read())
+            {
+                t = new Calendario();
+                t.CodPartido = c.sl[1].ToString();
+              
+            }
+            c.a.Close();
+
+            return t;
+
+        
+        }
+
+        public void ActualizarCalendario(Calendario t)
+        {
+            String Actualizar = "update calendario  set  codigo_equipo1='" + t.CodEquipo1 + "',codigo_equipo2 = '" + t.CodEquipo2 + "', codigo_fecha = '" + t.CodFecha + "' , fecha_encuentro = '" + t.Hora + "' where numero_partido= '" + t.CodPartido + "'";
+            ejecutar(Actualizar);
+        }
 
     }
 }

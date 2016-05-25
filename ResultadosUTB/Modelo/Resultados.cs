@@ -114,6 +114,20 @@ namespace ResultadosUTB.Modelo
             this.azules_equipo2 = azules_equipo2;
         }
 
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
+        public override int GetHashCode()
+        {
+            return this.ToString().GetHashCode();
+        }
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
 
         /*public override string ToString()
         {
