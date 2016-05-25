@@ -81,5 +81,25 @@ namespace ResultadosUTB.Web
         }
 
 
+        [WebMethod]
+
+        public Resultados[] ListadoResultados() {
+            SqlConnection con = new SqlConnection("server=JAIRDIAZ\\SQLEXPRESS; Database=ResultadosUTB; Integrated Security=true");
+            con.Open();
+            string sql = "SELECT numero_partido , goles_equipo1, goles_equipo2, amarillas_equipo1, amarillas_equipo2, rojas_equipo1, rojas_equipo2, azules_equipo1, azules_equipo2 FROM partidos";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            List<Resultados> lista = new List<Resultados>();
+            while (reader.Read()) {
+                lista.Add(new Resultados(reader.GetInt32(0), reader.GetInt32(1), reader.GetInt32(2), reader.GetInt32(3), reader.GetInt32(4), reader.GetInt32(5), reader.GetInt32(6), reader.GetInt32(7), reader.GetInt32(8)));
+            
+            }
+            con.Close();
+
+            return lista.ToArray();
+        
+        }
+
+
     }
 }

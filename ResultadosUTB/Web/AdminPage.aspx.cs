@@ -274,16 +274,16 @@ namespace ResultadosUTB.Web.OnlyLog
 
         protected void BtnGuardarFecha_Click(object sender, EventArgs e)
         {
-            try {
+            /*try {
                 Calendario f = new Calendario();
                 f.CodPartido = "1";//Label3.Text;
                 f.CodEquipo1 = TextBox28.Text;
                 f.CodEquipo2 = TextBox29.Text;
-                f.CodFecha = DropDownList1.Text.ToString();
+           //     f.CodFecha = DropDownList1.Text.ToString();
                 f.Hora = TextBox59.Text;
                 b.CrearProgramación(f);
 
-           /*     Calendario f1 = new Calendario();
+               Calendario f1 = new Calendario();
                 f1.CodPartido = Label32.Text;
                 f1.CodEquipo1 = TextBox22.Text;
                 f1.CodEquipo2 = TextBox30.Text;
@@ -338,18 +338,18 @@ namespace ResultadosUTB.Web.OnlyLog
                 f7.CodFecha = DropDownList1.Text;
                 f7.Hora = TextBox66.Text;
                 b.CrearProgramación(f7);
-                */
+                
             }catch(Exception ex){
             
            
             
-            }
+            }*/
 
         }
 
         protected void BtnBuscarFecha_Click(object sender, EventArgs e)
         {
-            string codigoFecha1 = DropDownList1.Text;
+            /*string codigoFecha1 = DropDownList1.Text;
             string CodigoPartido1 = Label3.Text; 
             Calendario t = b.BuscarFecha(codigoFecha1, CodigoPartido1);
 
@@ -366,7 +366,7 @@ namespace ResultadosUTB.Web.OnlyLog
             {
                 Response.Write("<script>alert('No existe registro');</script>");
 
-            }
+            }*/
 
         }
 
