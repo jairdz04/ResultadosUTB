@@ -10,9 +10,14 @@
     <link href="StyleDefault.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
+    <asp:Image ID="Image1" runat="server" Height="115px" ImageUrl="~/imagenes/utb.png" Width="546px" />
+     
     <form id="form1" runat="server">
-    <div id="Contenedor">
+       
+       
+    <div  id="Contenedor">
     
+        
  
    <div id="user">
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -42,9 +47,13 @@
    </div>
 
  
-
+        
 
     </div>
+        
     </form>
+    <p>
+&nbsp;
+    </p>
 </body>
 </html>

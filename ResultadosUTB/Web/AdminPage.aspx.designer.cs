@@ -733,15 +733,6 @@ namespace ResultadosUTB.Web.OnlyLog {
         protected global::System.Web.UI.WebControls.TextBox TextBox75;
         
         /// <summary>
-        /// Control BtnBuscarPartido.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnBuscarPartido;
-        
-        /// <summary>
         /// Control Label65.
         /// </summary>
         /// <remarks>
@@ -902,5 +893,14 @@ namespace ResultadosUTB.Web.OnlyLog {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnEditarResultado;
+        
+        /// <summary>
+        /// Control BtnBuscarPartido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnBuscarPartido;
     }
 }

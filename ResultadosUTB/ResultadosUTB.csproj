@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imagenes\utb.png" />
     <Content Include="Web.config" />
     <Content Include="Web\Default.aspx" />
     <Content Include="Web\AdminPage.aspx" />
@@ -69,6 +70,7 @@
     <Compile Include="Datos\CrudCalendario.cs" />
     <Compile Include="Datos\CrudGeneral.cs" />
     <Compile Include="Datos\CrudJugadores.cs" />
+    <Compile Include="Datos\CrudResultados.cs" />
     <Compile Include="Modelo\Calendario.cs" />
     <Compile Include="Modelo\ConexionBl.cs" />
     <Compile Include="Modelo\Jugador.cs" />

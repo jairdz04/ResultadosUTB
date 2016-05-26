@@ -19,15 +19,7 @@ namespace ResultadosUTB.Modelo
         public int rojas_equipo2;
         public int azules_equipo1;
         public int azules_equipo2;
-        private int p1;
-        private int p2;
-        private int p3;
-        private int p4;
-        private int p5;
-        private int p6;
-        private int p7;
-        private int p8;
-        private int p9;
+       
 
         
         #endregion

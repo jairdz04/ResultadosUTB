@@ -43,9 +43,13 @@ namespace ResultadosUTB.Web
             {
                //Datos erroneos... Insertar Label ("-PENDIENTE-")
                 //Label3.Visible = True;
-                TextBox1.Text = "";
-                TextBox2.Text = "";
-                TextBox1.Focus();
+                
+                    Response.Write("<script> alert ('Datos Erroneos');</script>");
+                    TextBox1.Text = "";
+                    TextBox2.Text = "";
+                    TextBox1.Focus();
+                
+                                
             }
 
             a.getA.Close();

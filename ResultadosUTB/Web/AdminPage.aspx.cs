@@ -18,6 +18,7 @@ namespace ResultadosUTB.Web.OnlyLog
         CrudGeneral g = new CrudGeneral();
         CrudJugadores h = new CrudJugadores();
         CrudCalendario b = new CrudCalendario();
+        CrudResultados re = new CrudResultados();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["UserID"] != null)
@@ -99,20 +100,28 @@ namespace ResultadosUTB.Web.OnlyLog
 
         protected void Button5_Click(object sender, EventArgs e)
         {
-            string codigo = TextBox27.Text;
-            Team t = g.BuscarEquipo(codigo);
-
-            if (g != null)
+            if (TextBox27.Text == "")
             {
-                TextBox1.Text = t.Nombre;
-                TextBox2.Text = t.Cod;
-                TextBox3.Text = t.E_mail_Contact;
-                TextBox4.Text = t.Tel_contact;
+                Response.Write("<script>alert('campo vacio');</script>");
+
             }
             else
             {
-                Response.Write("<script>alert('No existe registro');</script>");
+                string codigo = TextBox27.Text;
+                Team t = g.BuscarEquipo(codigo);
 
+                if (g != null)
+                {
+                    TextBox1.Text = t.Nombre;
+                    TextBox2.Text = t.Cod;
+                    TextBox3.Text = t.E_mail_Contact;
+                    TextBox4.Text = t.Tel_contact;
+                }
+                else
+                {
+                    Response.Write("<script>alert('No existe registro');</script>");
+
+                }
             }
 
         }
@@ -256,15 +265,22 @@ namespace ResultadosUTB.Web.OnlyLog
 
         protected void BtnEditar_Click(object sender, EventArgs e)
         {
-            try { 
-            Team t = new Team();
+            try {
+                if ((TextBox1.Text == "") || (TextBox2.Text == "") || (TextBox3.Text == "") || (TextBox4.Text == ""))
+                {
+                    Response.Write("<script>alert('Campos vacios');</script>");
+                }
+                else {
+                    Team t = new Team();
 
-            t.Cod = TextBox2.Text;
-            t.Nombre = TextBox1.Text;
-            t.E_mail_Contact = TextBox3.Text;
-            t.Tel_contact = TextBox4.Text;
-            g.ActualizarEquipo(t);
-            Response.Write("<script>alert('Actualizado correctamente');</script>");
+                    t.Cod = TextBox2.Text;
+                    t.Nombre = TextBox1.Text;
+                    t.E_mail_Contact = TextBox3.Text;
+                    t.Tel_contact = TextBox4.Text;
+                    g.ActualizarEquipo(t);
+                    Response.Write("<script>alert('Actualizado correctamente');</script>");
+                
+                }
                 }catch(Exception ex){
                     Response.Write("<script>alert('Fallo al actualizar');</script>");
                 
@@ -385,6 +401,101 @@ namespace ResultadosUTB.Web.OnlyLog
             }catch(Exception ex){
                 Response.Write("<script> alert ('Error al Actualizar');</script>");
             
+            }
+
+        }
+
+        protected void BtnGuardarResultados_Click(object sender, EventArgs e)
+        {
+            try {
+
+                 if ((TextBox75.Text == "") || (TextBox67.Text == "") || (TextBox71.Text == "") || (TextBox68.Text == "") || (TextBox72.Text == "")|| (TextBox70.Text == "")||
+                 (TextBox74.Text == "")|| (TextBox69.Text == "") || (TextBox73.Text == "")) {
+                    Response.Write("<script> alert ('Campos Vacios, Por favor completar campos');</script>");
+                
+                } else {
+                   Resultados r = new Resultados();
+                    string CodPartido = TextBox76.Text;
+                    Calendario t = b.BuscarCod (CodPartido);
+                    if (b == null)
+                    {
+                        Response.Write("<script> alert (' El Resultado de partido ya existe');</script>");
+                    }
+                    else {
+                        
+                r.numero_partido = Convert.ToInt32(TextBox75.Text);
+                r.goles_equipo1 = Convert.ToInt32(TextBox67.Text);
+                r.goles_equipo2 = Convert.ToInt32(TextBox71.Text);
+                r.amarillas_equipo1 = Convert.ToInt32(TextBox68.Text);
+                r.amarillas_equipo2 = Convert.ToInt32(TextBox72.Text);
+                r.rojas_equipo1 = Convert.ToInt32(TextBox70.Text);
+                r.rojas_equipo2 = Convert.ToInt32(TextBox74.Text);
+                r.azules_equipo1 = Convert.ToInt32(TextBox69.Text);
+                r.azules_equipo2 = Convert.ToInt32(TextBox73.Text);
+                re.CrearResultado(r);
+
+                        Response.Write("<script> alert (' Registro guardado');</script>");
+                         TextBox75.Text = "";
+                         TextBox67.Text = "";  
+                         TextBox71.Text = "";
+                         TextBox68.Text = ""; 
+                         TextBox72.Text = ""; 
+                         TextBox70.Text = "";
+                         TextBox74.Text = "";
+                         TextBox69.Text = "";
+                         TextBox73.Text = "";
+                        PnlFecha.Visible = false;
+                        PnlEquipo.Visible = false;
+                        PnlResultado.Visible = true;
+                    }
+                   
+                }
+               
+            
+            }
+            catch (Exception ex) {
+                Response.Write("<script> alert (' El Resultado de partido ya existe');</script>");
+            }
+            
+        }
+
+        protected void BtnBuscarPartido_Click(object sender, EventArgs e)
+        {
+
+            string CodigoPartido1 = TextBox75.Text;
+            Resultados t = re.BuscarResultado(CodigoPartido1);
+
+            if (b != null)
+            {
+                int a = Convert.ToInt32(t.numero_partido);
+                int d = Convert.ToInt32(t.amarillas_equipo1);
+                int f = Convert.ToInt32(t.amarillas_equipo2);
+                int g = Convert.ToInt32(t.azules_equipo1);
+                int h = Convert.ToInt32(t.azules_equipo2);
+                int i = Convert.ToInt32(t.goles_equipo1);
+                int j = Convert.ToInt32(t.goles_equipo2);
+                int k = Convert.ToInt32(t.rojas_equipo1);
+                int l = Convert.ToInt32(t.rojas_equipo2);
+                TextBox75.Text = "" + a;
+                TextBox67.Text = "" + i;
+                TextBox71.Text = "" + j;
+                TextBox68.Text = "" + d;
+                TextBox72.Text = "" + f;
+                TextBox70.Text = "" + k;
+                TextBox74.Text = "" + l;
+                TextBox69.Text = "" + g;
+                TextBox73.Text = "" + h;
+                
+                PnlFecha.Visible = false;
+                PnlEquipo.Visible = false;
+                PnlResultado.Visible = true;
+
+
+            }
+            else
+            {
+                Response.Write("<script>alert('No existe registro');</script>");
+
             }
 
         }
